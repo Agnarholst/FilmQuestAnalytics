@@ -1,4 +1,4 @@
 -- Showing films watched per year
-SELECT year, COUNT(*) AS y
+SELECT year, COUNT(*) AS films_watched
 FROM watched
 GROUP BY year;

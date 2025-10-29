@@ -1,11 +1,17 @@
 {
     "sqltools.connections": [
-        {
-            "previewLimit": 50,
-            "driver": "SQLite",
-            "name": "letterbox",
-            "database": "${workspaceFolder:FilmQuestAnalytics}/data.db"
-        }
+      {
+        "previewLimit": 50,
+        "driver": "SQLite",
+        "name": "letterbox",
+        "database": "${workspaceFolder:FilmQuestAnalytics}/data.db"
+      },
+      {
+        "previewLimit": 50,
+        "driver": "SQLite",
+        "name": "filmquestanalytics",
+        "database": "${workspaceFolder:1. FilmQuestAnalytic}/data.db"
+      }
     ],
     "python-envs.defaultEnvManager": "ms-python.python:system",
     "python-envs.pythonProjects": []
