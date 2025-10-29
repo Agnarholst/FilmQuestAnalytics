@@ -1,0 +1,3 @@
+SELECT * FROM
+watched
+ORDER BY year DESC;
