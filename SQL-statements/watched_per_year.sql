@@ -1,4 +1,6 @@
 -- Showing films watched per year
 SELECT year, COUNT(*) AS films_watched
 FROM watched
-GROUP BY year;
+GROUP BY year
+HAVING films_watched >= 30
+ORDER BY year DESC;
