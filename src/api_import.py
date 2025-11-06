@@ -17,16 +17,17 @@ api_key = os.environ.get("API_KEY")
 
 bearer = os.environ.get("ACCESS_TOKEN")
 
-print(type(bearer))
-
 url = "https://api.themoviedb.org/3/authentication"
 
 headers = {
     "accept": "application/json",
-    "Authorization": bearer
+    "Authorization": "Bearer " + bearer
 }
+
+print(headers)
 
 response = requests.get(url, headers=headers)
 
+print()
 print(response.text)
 
